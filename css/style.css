@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #495057;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-outline-info {
+    background-color: #17a2b8;
+    color: #fff;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+    background-color: #138496;
+    border-color: #138496;
+    color: #fff;
+}
+
+.search-input {
+    border-radius: 25px;
+    padding-right: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.table {
+    background-color: #fff;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

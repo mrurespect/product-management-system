@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="w-75 mx-auto py-5">
+        <h3 class="py-3 fw-bold">Product Management System</h3>
+        <label class="form-label" for="productNameInput">Product Name*:</label>
+        <input id="productNameInput" type="text" class="form-control mb-2">
+
+        <label class="form-label" for="productPriceInput">Product Price*:</label>
+        <input id="productPriceInput" type="number" class="form-control mb-2">
+
+        <label class="form-label" for="productcategorieInput">Product Category:</label>
+        <input id="productcategorieInput" type="text" class="form-control mb-2">
+
+        <label class="form-label" for="productdescriptionInput">Product Description:</label>
+        <textarea id="productdescriptionInput" type="text" class="form-control mb-2"></textarea>
+
+        <button onclick="addProduct();" class="btn btn-outline-info">Add Product</button>
+    </div>
+
+    <div class="w-75 mx-auto py-5">
+        <div class="w-75 mx-auto position-relative my-4">
+            <input type="text" oninput="displayProduct(this.value);" class="form-control search-input" placeholder="Search">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Desc</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+            <tr>
+                <td>Samsung</td>
+                <td>190</td>
+                <td>TV</td>
+                <td>4k display</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="java%20script/index.js"></script>
+</body>
+</html>
